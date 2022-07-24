@@ -1,13 +1,10 @@
-/**
-* Template Name: Medilab - v4.7.1
-* Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family:'Inter',sans-serif;
   color: #444444;
@@ -107,58 +104,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Top Bar
---------------------------------------------------------------*/
-#topbar {
-  background: #fff;
-  height: 40px;
-  font-size: 14px;
-  transition: all 0.5s;
-  z-index: 996;
-}
-#topbar.topbar-scrolled {
-  top: -40px;
-}
-#topbar .contact-info a {
-  line-height: 1;
-  color: #444444;
-  transition: 0.3s;
-}
-#topbar .contact-info a:hover {
-  color: #1977cc;
-}
-#topbar .contact-info i {
-  color: #1977cc;
-  padding-right: 4px;
-  margin-left: 15px;
-  line-height: 0;
-}
-#topbar .contact-info i:first-child {
-  margin-left: 0;
-}
-#topbar .social-links a {
-  color: #437099;
-  padding-left: 15px;
-  display: inline-block;
-  line-height: 1px;
-  transition: 0.3s;
-}
-#topbar .social-links a:hover {
-  color: #1977cc;
-}
-#topbar .social-links a:first-child {
-  border-left: 0;
-}
-
-/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
-  top: 40px;
+  padding: 10px 0;
+  /* top: 40px; */
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
 }
 #header.header-scrolled {
@@ -224,61 +177,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #1977cc;
   border-color: #1977cc;
 }
-.navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 20px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-}
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: none;
-  color: #082744;
-  border: none;
-}
-.navbar .dropdown ul a i {
-  font-size: 12px;
-}
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #1977cc;
-}
-.navbar .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
-  }
-}
+
 
 /**
 * Mobile Navigation 
@@ -347,32 +246,6 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
 }
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-}
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #1977cc;
-}
-.navbar-mobile .dropdown > .dropdown-active {
-  display: block;
-}
 
 /*--------------------------------------------------------------
 # welcome Section
@@ -380,9 +253,9 @@ h1, h2, h3, h4, h5, h6 {
 #welcome {
   width: 100%;
   height: 90vh;
-  background: url("../img/ritm-banner.jpg");
+  background: url("../img/ritm-banner.jpg") top center;
   background-size: cover;
-  /* margin-bottom: -200px; */
+  margin-bottom: -200px;
 }
 #welcome .container {
   position: relative;
@@ -404,11 +277,6 @@ h1, h2, h3, h4, h5, h6 {
 #welcome h4 {
   color: #ffffff;
   margin: 10px 0 0 0;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-#welcome h5 {
-  color: #ffffff;
   font-size: 18px;
   letter-spacing: 1px;
 }
@@ -480,11 +348,199 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+.why-us {
+  position: relative;
+}
+.why-us .content {
+  padding: 30px;
+  background: linear-gradient(221deg, rgba(2,0,36,1) 0%, rgba(81,176,121,0.8575805322128851) 0%, rgba(15,120,222,0.9164040616246498) 62%);
+  border-radius: 4px;
+  color: #fff;
+}
+
+.why-us .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.why-us .content p {
+  margin-bottom: 30px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+.why-us .content .more-btn {
+  margin: 20px 0 0 0;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  background: linear-gradient(221deg, rgba(2,0,36,1) 0%, rgba(81,176,121,0.8575805322128851) 0%, rgba(15,120,222,0.9164040616246498) 62%);
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 0 #f9e506;
+  transition: ease-out 0.3s;
+  outline: none;
+  font-size: 18px;
+}
+
+.why-us .content .more-btn i {
+  font-size: 14px;
+}
+
+.why-us .content .more-btn:hover {
+  color: #2d3436;
+  box-shadow: inset 300px 0 0 0 #f9e506;
+}
+
+.why-us .icon-boxes .icon-box {
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.why-us .icon-boxes .icon-box img {
+  width: 80px;
+  color: #1977cc;
+  margin-bottom: 10px;
+  /* margin-top: -35px; */
+}
+
+.why-us .icon-boxes .icon-box h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.why-us .icon-boxes .icon-box p {
+  font-size: 13px;
+  color: #848484;
+  
+}
+
+/*--------------------------------------------------------------
+# Appointment
+--------------------------------------------------------------*/
+#appointment{
+  margin-top: 30px;
+  background: linear-gradient(221deg, rgba(2,0,36,1) 0%, rgba(81,176,121,0.13769257703081228) 0%, rgba(145,218,246,0.19931722689075626) 62%);
+  padding: 70px 0 60px;
+}
+#appointment .appointment-img img{
+  width: 150px;
+  margin-top: -150px;
+  border-radius: 100px;
+}
+#appointment .appointment-img h4{
+  color: #27ae60;
+  margin-top: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#appointment .appointment-img .spacer{
+  height: 2px;
+  background: #f39c12;
+  width: 50px;
+  align-items: center;
+  margin: auto;
+}
+#appointment .appointment-box{
+  margin-top: 20px;
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#appointment .appointment-box img{
+  width: 20rem;
+}
+#appointment .appointment-box h4{
+  color: #2d3436;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.appointment-box .appointment-links {
+  opacity: 0;
+  left: 0;
+  right: 0;
+  top: calc(50% - 32px);
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+}
+.appointment-box .appointment-links a{
+  background: linear-gradient(221deg, rgba(2,0,36,1) 0%, rgba(81,176,121,0.8575805322128851) 0%, rgba(15,120,222,0.9164040616246498) 62%);
+  color: white;
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+.appointment-box .appointment-links a:hover{
+  background: #27ae60;
+  box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.5);
+}
+.appointment-box .appointment-info {
+  opacity: 0;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  background: white;
+}
+
+.appointment-box {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.appointment-box:before {
+  content: "";
+  background: rgba(137, 137, 138, 0.6);
+  position: absolute;
+  left: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+}
+
+.appointment-box:hover::before {
+  left: 0;
+}
+
+.appointment-box:hover .appointment-links {
+  opacity: 1;
+  top: calc(50% - 16px);
+}
+
+.appointment-box:hover .appointment-info {
+  opacity: 1;
+  bottom: 0;
+}
+
+
+
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
   color: #444444;
   font-size: 14px;
   background: #f1f7fd;
+  margin-top: 50px;
 }
-
