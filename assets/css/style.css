@@ -488,6 +488,10 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 3;
   transition: all ease-in-out 0.3s;
   background: white;
+  padding: 3px;
+}
+.appointment-box .appointment-info p{
+  font-size: 13px;
 }
 .appointment-box .appointment-info .spacer{
   height: 2px;
