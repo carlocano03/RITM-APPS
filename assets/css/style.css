@@ -616,6 +616,13 @@ h1, h2, h3, h4, h5, h6 {
 #footer {
   color: #444444;
   font-size: 14px;
-  background: #f1f7fd;
+  background: linear-gradient(221deg, rgba(2,0,36,1) 0%, rgba(81,176,121,0.0984768907563025) 0%, rgba(28,182,245,0.1292892156862745) 62%);
   margin-top: 50px;
+}
+#footer a{
+  color: #444444;
+}
+#footer a:hover{
+  cursor: pointer;
+  opacity: 0.9;
 }
