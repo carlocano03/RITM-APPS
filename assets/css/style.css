@@ -513,7 +513,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .appointment-box:before {
   content: "";
-  /* background: rgba(182, 182, 182, 0.6); */
   background: linear-gradient(221deg, rgba(2,0,36,1) 0%, rgba(81,176,121,0.13769257703081228) 0%, rgba(28,182,245,0.19931722689075626) 62%);
   position: absolute;
   left: 100%;
