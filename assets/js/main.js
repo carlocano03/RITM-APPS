@@ -1,9 +1,4 @@
-/**
-* Template Name: Medilab - v4.7.1
-* Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -170,48 +165,5 @@
       preloader.remove()
     });
   }
-
-  // /**
-  //  * Initiate glightbox 
-  //  */
-  // const glightbox = GLightbox({
-  //   selector: '.glightbox'
-  // });
-
-  // /**
-  //  * Initiate Gallery Lightbox 
-  //  */
-  // const galelryLightbox = GLightbox({
-  //   selector: '.galelry-lightbox'
-  // });
-
-  /**
-   * Testimonials slider
-   */
-  // new Swiper('.testimonials-slider', {
-  //   speed: 600,
-  //   loop: true,
-  //   autoplay: {
-  //     delay: 5000,
-  //     disableOnInteraction: false
-  //   },
-  //   slidesPerView: 'auto',
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //     type: 'bullets',
-  //     clickable: true
-  //   },
-  //   breakpoints: {
-  //     320: {
-  //       slidesPerView: 1,
-  //       spaceBetween: 20
-  //     },
-
-  //     1200: {
-  //       slidesPerView: 2,
-  //       spaceBetween: 20
-  //     }
-  //   }
-  // });
 
 })()

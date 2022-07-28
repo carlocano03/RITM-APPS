@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: linear-gradient(221deg, rgba(2,0,36,1) 0%, rgba(81,176,121,0.13769257703081228) 0%, rgba(28,182,245,0.19931722689075626) 62%);
 }
  
 /* Handle */
@@ -205,12 +205,14 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #2c4964;
+  color: white;
   font-size: 28px;
   cursor: pointer;
   display: none;
   line-height: 0;
   transition: 0.5s;
+  background: linear-gradient(221deg, rgba(2,0,36,1) 0%, rgba(81,176,121,0.8575805322128851) 0%, rgba(15,120,222,0.9164040616246498) 62%);
+  border-radius: 5px;
 }
 .mobile-nav-toggle.bi-x {
   color: #fff;
@@ -252,6 +254,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
+  border-radius: 5px;
 }
 .navbar-mobile > ul > li {
   padding: 0;
@@ -264,6 +267,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #1977cc;
+  background: linear-gradient(221deg, rgba(2,0,36,1) 0%, rgba(81,176,121,0.13769257703081228) 0%, rgba(145,218,246,0.19931722689075626) 62%);
+  width: 200px;
+  border-top-right-radius: 20px;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
