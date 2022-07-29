@@ -25,6 +25,25 @@ h1, h2, h3, h4, h5, h6 {
   font-family:'Inter',sans-serif;
 }
 
+#languageModal {
+  display: none;
+}
+
+.btn-lang{
+  background: transparent;
+  border: 2px solid #0984e3;
+  padding: 10px 20px;
+  color: #0984e3;
+  letter-spacing: 1px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn-lang:hover{
+  background: linear-gradient(221deg, rgba(2,0,36,1) 0%, rgba(81,176,121,0.8575805322128851) 0%, rgba(15,120,222,0.9164040616246498) 62%);
+  color: white;
+  border: 1px solid #0984e3;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -658,9 +677,5 @@ h1, h2, h3, h4, h5, h6 {
 #footer a:hover{
   cursor: pointer;
   opacity: 0.9;
-}
-
-#exampleModal {
-  display: none;
 }
 

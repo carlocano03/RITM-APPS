@@ -48,7 +48,8 @@
       <h1 class="title">Welcome<span> to RITM-APPS</span></h1>
       <h4>Department of Health</h4>
       <h2>Research Institute for Tropical Medicine</h2>
-      <a href="#appointment"><button class="btn-1">Make an Appointment</button></a> 
+      <!-- <a href="#appointment"></a> -->
+      <button class="btn-1">Make an Appointment</button>
     </div>
   </section><!-- End Welcome -->
 
@@ -323,15 +324,13 @@
   </main><!-- End #main -->
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" displayed="false">
+<div class="modal fade" id="languageModal" tabindex="-1" data-bs-backdrop="static" displayed="false">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-        <button type="button" class="btn btn-primary btn-lg">FILIPINO</button>
-        <button type="button" class="btn btn-primary btn-lg">ENGLISH</button>
+      <div class="modal-body text-center shadow" style="background: linear-gradient(221deg, rgba(2,0,36,1) 0%, rgba(81,176,121,0.13769257703081228) 0%, rgba(145,218,246,0.19931722689075626) 62%);">
+        <hr>
+        <button type="button" class="btn-lang me-3" data-bs-dismiss="modal"><i class="bi bi-translate me-2"></i>FILIPINO</button>
+        <button type="button" class="btn-lang" data-bs-dismiss="modal"><i class="bi bi-translate me-2"></i>ENGLISH</button>
       </div>
     </div>
   </div>
@@ -362,13 +361,17 @@
   <script>
     new WOW().init();
     AOS.init();
-
-    // $(window).scroll(function() {
-    //    if ($(document).scrollTop() == 1100 && $("#exampleModal").attr("displayed") === "false") {
-    //      $('#exampleModal').modal('show');
-    //      $("#exampleModal").attr("exampleModal", "true");
-    //    }
-    //  });
+    
+    $(document).on('click', '.btn-1', function(e){
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: $("#appointment").offset().top
+      });
+      
+      setTimeout(function(){
+        $('#languageModal').modal('show');
+      },1000);
+    });
   </script>
 
 </body>
