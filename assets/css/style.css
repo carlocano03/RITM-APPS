@@ -524,7 +524,7 @@ h1, h2, h3, h4, h5, h6 {
 .appointment-box .appointment-links a{
   background: linear-gradient(221deg, rgba(2,0,36,1) 0%, rgba(81,176,121,0.8575805322128851) 0%, rgba(15,120,222,0.9164040616246498) 62%);
   color: white;
-  padding: 10px 10px;
+  padding: 10px 30px;
   border-radius: 20px;
   box-shadow: 0px 5px 10px -4px rgba(0, 0, 0, 0.5);
 }

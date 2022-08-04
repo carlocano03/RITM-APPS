@@ -134,7 +134,7 @@
               <img src="assets/img/covid.png" alt="">
 
               <div class="appointment-links">
-                <a href="#" title="GET STARTED">GET STARTED <i class="bi bi-chevron-double-right"></i></a>
+                <a href="#" title="GET STARTED" class="get_started">GET STARTED <i class="bi bi-chevron-double-right"></i></a>
               </div>
               <div class="appointment-info">
                 <div class="spacer"></div>
@@ -148,7 +148,7 @@
               <img src="assets/img/Medical prescription-bro.png" alt="">
 
               <div class="appointment-links">
-                <a href="#" title="GET STARTED">GET STARTED <i class="bi bi-chevron-double-right"></i></a>
+                <a href="#" title="GET STARTED" class="get_started">GET STARTED <i class="bi bi-chevron-double-right"></i></a>
               </div>
               <div class="appointment-info">
                 <div class="spacer"></div>
@@ -162,7 +162,7 @@
               <img src="assets/img/Online Doctor-pana.png" alt="">
               
               <div class="appointment-links">
-                <a href="#" title="GET STARTED">GET STARTED <i class="bi bi-chevron-double-right"></i></a>
+                <a href="#" title="GET STARTED" class="get_started">GET STARTED <i class="bi bi-chevron-double-right"></i></a>
               </div>
               <div class="appointment-info">
                 <div class="spacer"></div>
@@ -329,7 +329,7 @@
     <div class="modal-content">
       <div class="modal-body text-center shadow" style="background: linear-gradient(221deg, rgba(2,0,36,1) 0%, rgba(81,176,121,0.13769257703081228) 0%, rgba(145,218,246,0.19931722689075626) 62%);">
         <hr>
-        <button type="button" class="btn-lang me-3" data-bs-dismiss="modal"><i class="bi bi-translate me-2"></i>FILIPINO</button>
+        <button type="button" class="btn-lang me-3 filipino"><i class="bi bi-translate me-2"></i>FILIPINO</button>
         <button type="button" class="btn-lang" data-bs-dismiss="modal"><i class="bi bi-translate me-2"></i>ENGLISH</button>
       </div>
     </div>
@@ -371,6 +371,12 @@
       setTimeout(function(){
         $('#languageModal').modal('show');
       },1000);
+    });
+
+    $(document).on('click', '.filipino', function(){
+      $(".get_started").html("MAGPATULOY <i class='bi bi-chevron-double-right'></i>");
+      $('.get_started').attr('title', 'MAGPATULOY')
+      $('#languageModal').modal('hide');
     });
   </script>
 
